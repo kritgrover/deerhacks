@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/signin-style.css" th:href="@{/css/signin-style.css}"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <title>KonnectMe</title>
+</head>
+<body>
+<!-- Home -->
+    <section class="home">
+        <h1 class="display-4 fw-bold">Welcome to KonnectMe!</h1>
+        <div class="container-fluid p-5" id="intro">
+            <div id="intro-left">
+<!--                <img src="signin.png" alt="logo icon">-->
+            </div>
+            <div id="intro-right">
+
+                <a href="#" th:href="@{/login}" class="col-md-8 py-3 lead fs-4">
+                    <button type="button" class="btn btn-outline-success btn-lg" id="form-open">Get Started</button>
+                </a>
+            </div>
+<!--            <button class="button"><a href="#" th:href="@{/login}">Login Now</a></button>-->
+
+        </div>
+    </section>
+
+<!--<p><a href="/h2-console" th:href="@{/h2-console}">Go to h2 page</a></p>-->
+<!--<p><a href="/secure/index" th:href="@{/secure/index}">Go to secure page</a></p>-->
+
+
+<script src="../static/js/script.js" th:src="@{/js/script.js}"></script>
+
+
+</body>
+</html>

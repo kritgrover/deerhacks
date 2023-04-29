@@ -1,0 +1,291 @@
+h1 {
+    font-family: 'Lora', serif;
+}
+
+
+h2 {
+    font-family: 'Lora', cursive;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-item{
+    margin: 0 7px;
+}
+
+#intro button:hover{
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    text-decoration: underline;
+    transition: 1s;
+}
+
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+.nav-link:hover {
+    background-color: #ecf4c3;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+:root {
+    --numDays: 5;
+    --numHours: 10;
+    --timeHeight: 60px;
+    --calBgColor: #fff1f8;
+    --eventBorderColor: #000;
+    --eventColor1: #f7a0a0;
+    --eventColor2: #ffd93d;
+    --eventColor3: #B4E4FF;
+    --eventColor4: #d1ffe6;
+}
+
+.calendar {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    margin: 2rem;
+}
+
+#acc-pics img {
+    margin-left: 2.5rem;
+}
+
+#acc-pics{
+    display: flex;
+    padding: 0.5rem;
+    margin: 0 2rem;
+}
+
+.timeline {
+    display: grid;
+    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+}
+
+.days {
+    display: grid;
+    grid-column: 2;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.events {
+    display: grid;
+    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+    border-radius: 5px;
+    background: #ecf4c3;
+    font-size: 1rem;
+}
+
+.start-10 {
+    grid-row-start: 2;
+}
+
+.start-12 {
+    grid-row-start: 4;
+}
+
+.start-1 {
+    grid-row-start: 5;
+}
+
+.start-2 {
+    grid-row-start: 6;
+}
+
+.end-12 {
+    grid-row-end: 4;
+}
+
+.end-1 {
+    grid-row-end: 5;
+}
+
+.end-3 {
+    grid-row-end: 7;
+}
+
+.end-4 {
+    grid-row-end: 8;
+}
+
+.end-5 {
+    grid-row-end: 9;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.event {
+    border: 1px solid var(--eventBorderColor);
+    border-radius: 5px;
+    padding: 0.4rem;
+    margin: 0 0.5rem;
+    background: white;
+}
+
+.space .date {
+    height: 60px
+}
+
+.corp-fi {
+    background: var(--eventColor1);
+}
+
+.ent-law {
+    background: var(--eventColor2);
+}
+
+.writing {
+    background: var(--eventColor3);
+}
+
+.securities {
+    background: var(--eventColor4);
+}
+
+.date {
+    display: flex;
+    gap: 1em;
+}
+
+.date-num {
+    font-size: 2rem;
+    font-weight: 600;
+    display: inline;
+}
+
+.date-day {
+    display: inline;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.card{
+    text-align: center;
+}
+
+.form{
+    position: relative;
+}
+
+.form-input{
+
+    height: 50px;
+    text-indent: 15px;
+    border-radius: 10px;
+}
+
+.form-input:focus{
+
+    box-shadow: none;
+    border:none;
+}
+
+#intro {
+    background-color: #BFDB38 ;
+}
+
+#intro-left {
+    width: 50%;
+    padding: 0;
+    display: inline-block;
+    height: 100%;
+}
+
+#intro-left img {
+    max-height: 100%;
+    display: block;
+}
+
+#intro-right {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    padding: 2rem;
+}
+.card-text
+{
+    display:flex;
+    justify-content: space-around;
+}
+
+.volunteer_text{
+    font-size: 18px;
+}
+
+
+#myInput {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+
+button {
+    background-color: #BFDB38;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL tr {
+    border: 1px solid #ddd;
+}
+
+#myUL th {
+    background-color: #f6f6f6;
+    padding: 12px 20px;
+    text-align: left;
+}
+
+#myUL td {
+    padding: 12px 20px;
+}
+
+#myUL input[type="button"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#volunteer button
+{
+    background-color: #BFDB38;
+}
+
+.volunteer_nav:hover{
+    opacity: 1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    text-decoration: underline;
+    font-size: 1.1rem;
+    transition: 1s;
+}
