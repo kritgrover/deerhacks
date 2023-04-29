@@ -12,10 +12,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=PT+Sans&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #007f5f;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            color: #fff;
+            background-color: #2b9348;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #007f5f;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007f5f;
+            color: #fff;
+        }
+        .volunteer_nav {
+            margin-top: 2rem;
+        }
+    </style>
 
     <title>Teachings</title>
 </head>
 <body>
+<div class="container">
     <h2>Classes Taught</h2>
     <table id="myTable">
         <thead>
@@ -32,41 +77,20 @@
                 <td>The Game of Chess</td>
                 <td>Monday, 10:00-11:00 AM</td>
                 <td>16+</td>
-                <td>one-on-one</td>
+                <td>One-on-One</td>
                 <td><button>Edit</button></td>
             </tr>
             <tr>
                 <td>World Of Crafts</td>
                 <td>Wednesday, 2:00-3:00 PM</td>
                 <td>12+</td>
-                <td>group</td>
-                <td><button>Edit</button></td>
-            </tr>
-            <tr>
-                <td>Intro to Mandarin</td>
-                <td>Tuesday, 9:00-10:00 AM</td>
-                <td>12+</td>
-                <td>group</td>
-                <td><button>Edit</button></td>
-            </tr>
-            <tr>
-                <td>Crocheting</td>
-                <td>Friday, 4:00-5:00 PM</td>
-                <td>16+</td>
-                <td>group</td>
-                <td><button>Edit</button></td>
-            </tr>
-            <tr>
-                <td>Painting</td>
-                <td>Thursday, 1:00-2:00 PM</td>
-                <td>10+</td>
-                <td>group</td>
+                <td>Group</td>
                 <td><button>Edit</button></td>
             </tr>
         </tbody>
     </table>
     <button class="volunteer_nav" onclick="location.href='index.html'">Go Back</button>
-
+</div>
     <script src="script.js"></script>
 
 </body>
