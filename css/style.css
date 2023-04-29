@@ -16,10 +16,10 @@ body {
    --timeHeight: 60px;
    --calBgColor: #fff1f8;
    --eventBorderColor: #f2d3d8;
-   --eventColor1: #ffd6d1;
-   --eventColor2: #fafaa3;
-   --eventColor3: #B4E4FF;
-   --eventColor4: #d1ffe6;
+   --eventColor1: #68B984;
+   --eventColor2: #FED049;
+   --eventColor3: #6ECCAF;
+   --eventColor4: #5780aa;
 }
 
 .calendar {
@@ -45,7 +45,7 @@ body {
    display: grid;
    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
    border-radius: 5px;
-   background: #e2f8ff;
+   background: #ecf4c3;
 }
 
 .start-10 {
@@ -176,4 +176,9 @@ body {
    float: right;
    width: 50%;
    padding: 2rem;
+}
+.card-text
+{
+   display:flex;
+   justify-content: space-around;
 }
