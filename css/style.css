@@ -4,8 +4,9 @@ h1 {
 
 
 h2 {
-   font-family: 'Gloria Hallelujah', cursive;
-   font-size: 2rem;
+   font-family: 'PT Sans', sans-serif !important;
+   /* margin-top: 0 !important;
+   padding-top: 0 !important; */
 }
 
 body {
@@ -196,3 +197,80 @@ body {
    justify-content: space-around;
 }
 
+.volunteer_text{
+   font-size: 18px;
+}
+/* card{
+   position: relative;
+} */
+.volunteer_nav{
+   /* float: right; */
+   /* position: absolute;
+   bottom: 0;
+   align-items: center;
+   justify-content: center; */
+}
+/* h2{
+   margin-top: 0;
+   padding-top: 0;
+   padding: 0;
+}
+.container .px-5{
+   margin-top: 10px;
+} */
+
+/* Style the search box */
+#myInput {
+   width: 20%;
+   font-size: 16px;
+   padding: 12px 20px 12px 40px;
+   border: 1px solid #ddd;
+   margin-bottom: 12px;
+ }
+ 
+ /* Style the search button */
+ button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ #myUL {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ #myUL tr {
+   border: 1px solid #ddd;
+ }
+ 
+ #myUL th {
+   background-color: #f6f6f6;
+   padding: 12px 20px;
+   text-align: left;
+ }
+ 
+ #myUL td {
+   padding: 12px 20px;
+ }
+ 
+ #myUL input[type="button"] {
+   background-color: #4CAF50;
+   border: none;
+   color: white;
+   padding: 5px 10px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+ }
+ /* .card-body{
+   display: flex;
+   flex-direction: column;
+   justify-content:space-around
+ } */
