@@ -198,35 +198,17 @@ body {
 .volunteer_text{
    font-size: 18px;
 }
-/* card{
-   position: relative;
-} */
-.volunteer_nav{
-   /* float: right; */
-   /* position: absolute;
-   bottom: 0;
-   align-items: center;
-   justify-content: center; */
-}
-/* h2{
-   margin-top: 0;
-   padding-top: 0;
-   padding: 0;
-}
-.container .px-5{
-   margin-top: 10px;
-} */
 
-/* Style the search box */
+
 #myInput {
-   width: 20%;
+   width: 90%;
    font-size: 16px;
-   padding: 12px 20px 12px 40px;
+   padding: 12px 20px;
    border: 1px solid #ddd;
    margin-bottom: 12px;
  }
  
- /* Style the search button */
+
  button {
    background-color: #4CAF50;
    color: white;
@@ -267,8 +249,13 @@ body {
    margin: 4px 2px;
    cursor: pointer;
  }
- /* .card-body{
+ .card-body{
    display: flex;
    flex-direction: column;
-   justify-content:space-around
- } */
+   justify-content: space-around;
+ }
+
+ #volunteer button
+ {
+     background-color: #BFDB38;
+ }
