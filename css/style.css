@@ -1,13 +1,25 @@
 h1 {
-   font-family: 'Roboto Condensed', sans-serif !important;
+   font-family: 'Gloria Hallelujah', cursive;
 }
 
+
 h2 {
-   font-family: 'PT Sans', sans-serif !important;
+   font-family: 'Gloria Hallelujah', cursive;
+   font-size: 2rem;
 }
 
 body {
-   font-family: 'Nunito', sans-serif !important;
+   font-family: 'Patrick Hand', cursive;
+}
+
+.nav-link{
+   font-size: 1.2rem;
+}
+
+.nav-link:hover {
+   background-color: #ecf4c3;
+   text-decoration: underline;
+   transition: 1s;
 }
 
 :root {
@@ -15,11 +27,11 @@ body {
    --numHours: 10;
    --timeHeight: 60px;
    --calBgColor: #fff1f8;
-   --eventBorderColor: #f2d3d8;
-   --eventColor1: #68B984;
-   --eventColor2: #FED049;
-   --eventColor3: #6ECCAF;
-   --eventColor4: #5780aa;
+   --eventBorderColor: #000;
+   --eventColor1: #f7a0a0;
+   --eventColor2: #ffd93d;
+   --eventColor3: #B4E4FF;
+   --eventColor4: #d1ffe6;
 }
 
 .calendar {
@@ -46,6 +58,7 @@ body {
    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
    border-radius: 5px;
    background: #ecf4c3;
+   font-size: 1.07rem;
 }
 
 .start-10 {
@@ -182,3 +195,4 @@ body {
    display:flex;
    justify-content: space-around;
 }
+
