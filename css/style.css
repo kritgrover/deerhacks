@@ -18,7 +18,7 @@ body {
    --eventBorderColor: #f2d3d8;
    --eventColor1: #ffd6d1;
    --eventColor2: #fafaa3;
-   --eventColor3: #e2f8ff;
+   --eventColor3: #B4E4FF;
    --eventColor4: #d1ffe6;
 }
 
@@ -45,7 +45,7 @@ body {
    display: grid;
    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
    border-radius: 5px;
-   background: lightgray;
+   background: #e2f8ff;
 }
 
 .start-10 {
@@ -153,4 +153,27 @@ body {
 
    box-shadow: none;
    border:none;
+}
+
+#intro {
+   background-color: #BFDB38 ;
+}
+
+#intro-left {
+   width: 50%;
+   padding: 0;
+   display: inline-block;
+   height: 100%;
+}
+
+#intro-left img {
+   max-height: 100%;
+   display: block;
+}
+
+#intro-right {
+   display: inline-block;
+   float: right;
+   width: 50%;
+   padding: 2rem;
 }
