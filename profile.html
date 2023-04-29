@@ -9,14 +9,15 @@
 	<title>User Profile</title>
 	<style>
 		body {
-			background-color: #eafbea; /* light green */
+			background-color: #ecf4c3; /* light green */
 		}
 
 		h1 {
-            font-family: "Lora", Serif;
+            font-family: "Lora", serif;
 			color: #246b40; /* dark green */
 			text-align: center;
 			margin-top: 50px;
+            text-decoration: underline;
 		}
 
 		.container {
@@ -77,7 +78,6 @@
 		}
 
 		.password-change {
-			text-align: right;
 			margin-top: 20px;
 			font-size: 14px;
 			color: #246b40;
@@ -99,7 +99,7 @@
 			<input type="email" id="email" name="email" required>
 
 			<label for="interests">Hobbies and Interests:</label>
-			<table>
+			<table id="interests">
                 <tr>
                   <td>Music</td>
                   <td><input type="text" name="music"></td>
@@ -113,11 +113,13 @@
                   <td><input type="text" name="reading/writing"></td>
                 </tr>
               </table>
+        </form>
               
-              <form class="form-group">
-                <label for="password">Change Password</label>
-                <input type="password" id="password" name="password" required>
-                <input type="submit" value="Save">
-              </form>
+      <form class="form-group">
+        <label for="password">Change Password</label>
+        <input type="password" id="password" name="password" class="password-change" required>
+        <input type="submit" value="Save">
+      </form>
+    </div>
             </body>
           </html>
