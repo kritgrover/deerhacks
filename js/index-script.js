@@ -42,3 +42,49 @@ link4.addEventListener('click', () => {
     // Remove the parent element from the DOM
     parent.remove();
 });
+
+const send1 = document.getElementById('send1')
+send1.addEventListener('click', function(event) {
+    event.preventDefault(); // prevent default behavior of anchor tag
+
+    // create alert element and add class
+    const alertElement = document.createElement('div');
+    alertElement.classList.add('alert', 'alert-success');
+
+    // add alert message and button
+    alertElement.innerHTML = 'Friend request sent!';
+
+    // add alert to the container element
+    const containerElement = document.getElementById('friends');
+    containerElement.insertBefore(alertElement, containerElement.firstChild);
+    const parent = send1.parentNode.parentNode.parentNode.parentNode;
+
+    setTimeout(function() {
+        alertElement.remove();
+        parent.remove();
+    }, 2000);
+
+});
+
+const send2 = document.getElementById('send2')
+send2.addEventListener('click', function(event) {
+    event.preventDefault(); // prevent default behavior of anchor tag
+
+    // create alert element and add class
+    const alertElement = document.createElement('div');
+    alertElement.classList.add('alert', 'alert-success');
+
+    // add alert message and button
+    alertElement.innerHTML = 'Friend request sent!';
+
+    // add alert to the container element
+    const containerElement = document.getElementById('friends');
+    containerElement.insertBefore(alertElement, containerElement.firstChild);
+    const parent = send2.parentNode.parentNode.parentNode.parentNode;
+
+    setTimeout(function() {
+        alertElement.remove();
+        parent.remove();
+    }, 2000);
+
+});
