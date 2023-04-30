@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=PT+Sans&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <style>
+        body {
+            font-family: "Ubuntu", sans-serif;
+        }
         .container {
             width: 80%;
             margin: 0 auto;
@@ -19,6 +22,7 @@
         }
 
         h2 {
+            font-family: "Lora", serif;
             font-size: 3rem;
             margin-bottom: 20px;
             color: #007f5f;
@@ -72,25 +76,26 @@
             <tr>
                 <td>The Game of Chess</td>
                 <td>Monday, 10:00-11:00 AM</td>
-                <td><button>Remove</button></td>
+                <td><button id="b1">Remove</button></td>
             </tr>
 
             <tr>
                 <td>Intro to Mandarin</td>
                 <td>Tuesday, 9:00-10:00 AM</td>
-                <td><button>Remove</button></td>
+                <td><button id="b2">Remove</button></td>
             </tr>
             <tr>
                 <td>Crocheting</td>
                 <td>Friday, 4:00-5:00 PM</td>
-                <td><button>Remove</button></td>
+                <td><button id="b3">Remove</button></td>
             </tr>
 
         </tbody>
     </table>
     <button class="volunteer_nav" onclick="location.href='index.html'">Go Back</button>
+    <p id="noResults"></p>
 </div>
-    <script src="../js/vol-script.js"></script>
+    <script src="../js/vol-enrol.js"></script>
 
 </body>
 </html>
