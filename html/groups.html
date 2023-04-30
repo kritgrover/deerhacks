@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Groups</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=PT+Sans&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h2 {
+            font-family: "Lora", serif;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #007f5f;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            color: #fff;
+            background-color: #2b9348;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #007f5f;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007f5f;
+            color: #fff;
+        }
+        .volunteer_nav {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Find Groups</h2>
+    <input type="text" id="myInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+    <br>
+    <table id="myTable">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Timing</th>
+            <th>Add</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Chess Club</td>
+            <td>Monday, 10:00-11:00 AM</td>
+            <td><button id="b1">Add</button></td>
+        </tr>
+        <tr>
+            <td>Reader's Club</td>
+            <td>Wednesday, 2:00-3:00 PM</td>
+            <td><button id="b2">Add</button></td>
+        </tr>
+        <tr>
+            <td>Morning Meditation</td>
+            <td>Tuesday, 9:00-10:00 AM</td>
+            <td><button id="b3">Add</button></td>
+        </tr>
+        <tr>
+            <td>Crocheting Club</td>
+            <td>Friday, 4:00-5:00 PM</td>
+            <td><button id="b4">Add</button></td>
+        </tr>
+
+        </tbody>
+    </table>
+    <button class="volunteer_nav" id="back" onclick="location.href='index.html'">Go Back</button>
+
+    <p id="noResults"></p>
+</div>
+
+<script src="../js/group-js.js"></script>
+</body>
+</html>
