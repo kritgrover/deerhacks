@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Classes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=PT+Sans&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .container {
             width: 80%;
@@ -24,6 +26,17 @@
             margin-bottom: 20px;
             color: #007f5f;
             text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 2rem;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f2f2f2;
         }
 
         button {
@@ -56,42 +69,54 @@
             margin-top: 2rem;
         }
     </style>
-
-    <title>Teachings</title>
 </head>
 <body>
-<div class="container">
-    <h2>Classes Taught</h2>
+    <div class="container">
+    <h2>Available Classes</h2>
+    <input type="text" id="myInput" placeholder="Search...">
+    <button onclick="search()">Search</button>
+    <br>
     <table id="myTable">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Timing</th>
-                <th>Age Group</th>
-                <th>Type</th>
-                <th>Edit</th>
+                <th>Add</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>The Game of Chess</td>
                 <td>Monday, 10:00-11:00 AM</td>
-                <td>16+</td>
-                <td>One-on-One</td>
-                <td><button>Edit</button></td>
+                <td><button>Add</button></td>
             </tr>
             <tr>
                 <td>World Of Crafts</td>
                 <td>Wednesday, 2:00-3:00 PM</td>
-                <td>12+</td>
-                <td>Group</td>
-                <td><button>Edit</button></td>
+                <td><button>Add</button></td>
+            </tr>
+            <tr>
+                <td>Intro to Mandarin</td>
+                <td>Tuesday, 9:00-10:00 AM</td>
+                <td><button>Add</button></td>
+            </tr>
+            <tr>
+                <td>Crocheting</td>
+                <td>Friday, 4:00-5:00 PM</td>
+                <td><button>Add</button></td>
+            </tr>
+            <tr>
+                <td>Painting</td>
+                <td>Thursday, 1:00-2:00 PM</td>
+                <td><button>Add</button></td>
             </tr>
         </tbody>
     </table>
     <button class="volunteer_nav" onclick="location.href='index.html'">Go Back</button>
-</div>
-    <script src="script.js"></script>
 
+    <p id="noResults"></p>
+    </div>
+
+    <script src="vol-script.js"></script>
 </body>
 </html>
