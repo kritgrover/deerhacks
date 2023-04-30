@@ -1,3 +1,6 @@
+body{
+    background-color: #fff7d8;
+}
 h1 {
     font-family: 'Lora', serif;
 }
@@ -28,7 +31,7 @@ body {
 }
 
 .nav-link:hover {
-   background-color: #ecf4c3;
+   background-color: #fff;
    text-decoration: underline;
    transition: 1s;
 }
@@ -238,6 +241,27 @@ body {
    border: none;
    cursor: pointer;
  }
+
+.bottom-container a {
+    font-size: 1.3rem;
+    color: #EAF6F6;
+    font-family: "Poppins", sans-serif;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.bottom-container {
+    background-color: #03001C;
+    padding:1.25rem;
+    text-align: center;
+}
+
  
  #myUL {
    list-style-type: none;
@@ -288,4 +312,12 @@ body {
      text-decoration: underline;
      font-size: 1.1rem;
      transition: 1s;
+ }
+
+ #contact {
+     color: lightgray;
+ }
+
+ footer {
+     margin-top: 2rem;
  }
